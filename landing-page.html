@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProductX – Productivity Simplified</title>
   <style>
     * {
       margin: 0;
@@ -13,15 +13,14 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
+      background: #f8fbfe;
       color: #333;
     }
 
     header {
-      background: #4a90e2;
+      background: #0077cc;
       color: white;
-      padding: 40px 0;
+      padding: 70px 20px;
       text-align: center;
     }
 
@@ -29,46 +28,79 @@
       font-size: 3em;
     }
 
-    nav {
+    header p {
+      font-size: 1.3em;
       margin-top: 10px;
+    }
+
+    nav {
+      background: #005fa3;
+      padding: 10px 0;
+      text-align: center;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
       text-align: center;
     }
 
-    .features {
+    h2 {
+      color: #0077cc;
+      margin-bottom: 20px;
+    }
+
+    .features, .testimonials, .use-cases, .faq-items {
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
+      justify-content: space-around;
       gap: 20px;
     }
 
-    .feature {
+    .feature, .testimonial, .case, .faq {
       background: white;
       padding: 20px;
       border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       width: 300px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      background: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     footer {
       background: #222;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 30px 20px;
+      margin-top: 40px;
     }
 
     @media (max-width: 768px) {
-      .features {
+      .features, .testimonials, .use-cases, .faq-items {
         flex-direction: column;
         align-items: center;
       }
@@ -78,39 +110,127 @@
 <body>
 
   <header>
-    <h1>My Awesome Landing Page</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Welcome to ProductX</h1>
+    <p>Productivity Simplified. Work Smarter, Not Harder.</p>
   </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#product">Product</a>
+    <a href="#features">Features</a>
+    <a href="#use-cases">Use Cases</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <section id="about">
-    <h2>About This Project</h2>
-    <p>This landing page is built using only HTML and CSS. It's a great beginner project to understand layout, styling, and responsiveness.</p>
+    <h2>About ProductX</h2>
+    <p>At ProductX, we believe in making technology human-friendly. Our mission is to empower professionals, teams, and businesses with tools that are simple, effective, and powerful. We combine elegant design with smart functionality to help you stay on track, meet your goals, and get more done.</p>
+  </section>
+
+  <section id="product">
+    <h2>What is ProductX?</h2>
+    <p>ProductX is an all-in-one task and project management tool designed for individuals, teams, and businesses. It brings task tracking, file sharing, collaboration, and reporting into one simple interface so you can focus on what matters most—getting things done.</p>
+    <p>Our platform works across desktop and mobile, offering a consistent experience whether you're at your desk or on the move.</p>
   </section>
 
   <section id="features">
-    <h2>Features</h2>
+    <h2>Top Features</h2>
     <div class="features">
       <div class="feature">
-        <h3>Responsive Design</h3>
-        <p>Looks good on all screen sizes using flexbox and media queries.</p>
+        <h3>Task Boards</h3>
+        <p>Organize your work visually with drag-and-drop Kanban boards, custom statuses, and color tags.</p>
       </div>
       <div class="feature">
-        <h3>Clean Code</h3>
-        <p>Simple and clean structure, perfect for learning and customizing.</p>
+        <h3>Real-Time Collaboration</h3>
+        <p>Chat, comment, and share documents with your team without switching apps.</p>
       </div>
       <div class="feature">
-        <h3>Creative Styling</h3>
-        <p>Colors, boxes, and layout styled with care using CSS.</p>
+        <h3>Calendar Sync</h3>
+        <p>Integrate with Google Calendar, Outlook, and Apple Calendar to never miss a deadline.</p>
+      </div>
+      <div class="feature">
+        <h3>File Storage</h3>
+        <p>Upload, preview, and manage files directly within your tasks and projects.</p>
+      </div>
+      <div class="feature">
+        <h3>Smart Notifications</h3>
+        <p>Stay updated with reminders, mentions, and updates—without the noise.</p>
+      </div>
+      <div class="feature">
+        <h3>Insightful Reports</h3>
+        <p>Visualize productivity and project progress with easy-to-read charts and summaries.</p>
       </div>
     </div>
   </section>
 
-  <footer id="contact">
-    <p>Made with ❤️ by a beginner web developer</p>
+  <section id="use-cases">
+    <h2>Who Uses ProductX?</h2>
+    <div class="use-cases">
+      <div class="case">
+        <h3>Startups</h3>
+        <p>From launch to growth, keep your agile teams focused and aligned.</p>
+      </div>
+      <div class="case">
+        <h3>Freelancers</h3>
+        <p>Manage client work, invoices, and deadlines in one place.</p>
+      </div>
+      <div class="case">
+        <h3>Educators</h3>
+        <p>Coordinate assignments, lectures, and student communication efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Customer Love</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“The intuitive UI and powerful features make ProductX our team’s favorite tool.”</p>
+        <strong>- Maya, Tech Lead</strong>
+      </div>
+      <div class="testimonial">
+        <p>“I use it every day to track my freelance projects. It keeps me productive!”</p>
+        <strong>- Sam, Designer</strong>
+      </div>
+      <div class="testimonial">
+        <p>“We moved from spreadsheets to ProductX and haven’t looked back since.”</p>
+        <strong>- Ankit, CEO</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-items">
+      <div class="faq">
+        <h3>Is ProductX free to use?</h3>
+        <p>Yes! We offer a free plan with essential features. Paid plans unlock more advanced tools.</p>
+      </div>
+      <div class="faq">
+        <h3>Can I use it on mobile?</h3>
+        <p>Absolutely. ProductX works seamlessly across all devices, including Android and iOS.</p>
+      </div>
+      <div class="faq">
+        <h3>Is my data secure?</h3>
+        <p>Your data is encrypted and securely stored. We take privacy and protection seriously.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ProductX. Crafted with care and code. | <a href="#top" style="color:#aaa;">Back to Top</a></p>
   </footer>
 
 </body>
