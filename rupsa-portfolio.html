@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rupsa Roy | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111827;
+      color: #f3f4f6;
+      line-height: 1.6;
+    }
+
+    a { color: #fbbf24; text-decoration: none; }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fbbf24;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      font-weight: bold;
+    }
+
+    header p {
+      color: #d1d5db;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #1f2937;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #fbbf24;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1f2937;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      text-align: left;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #fbbf24;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fbbf24;
+      color: #111827;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #1f2937;
+      color: #9ca3af;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="me.jpg" alt="Rupsa Roy" />
+    <h1>Rupsa Roy</h1>
+    <p>Graphic Designer | Web Dev Enthusiast | BCA @ UEM Jaipur</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a creative individual passionate about design and development. With experience in graphic design, event management, and coding, I bring visuals and logic together. I'm currently exploring web development and hope to dive into game development soon.</p>
+    <a href="rupsa%20roy%20resume%20(2).pdf" class="resume-btn" download>Download Resume</a>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Experience</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>Designed creatives for AceHack, HackUEM, and UEM events using Figma, Canva, and Adobe tools.</p>
+      </div>
+      <div class="card">
+        <h3>Technical Skills</h3>
+        <p>Beginner in Python, Java, C/C++, HTML. Currently learning full stack development.</p>
+      </div>
+      <div class="card">
+        <h3>Event Management</h3>
+        <p>Managed and coordinated events as Event & Graphics Head at UEM Jaipur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Project Categories</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Product Design</h3>
+        <p>UI/UX mockups and creative visuals for tech events and promotional content.</p>
+      </div>
+      <div class="card">
+        <h3>Branding Design</h3>
+        <p>Social media posts, banners, and identity design for clubs and hackathons.</p>
+      </div>
+      <div class="card">
+        <h3>Development Projects</h3>
+        <p>Basic static websites, landing pages, and to-do apps using HTML/CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: rr.rupsaroy@gmail.com</p>
+    <p>Phone: 84203 37767</p>
+    <p>LinkedIn / GitHub: Add links here when ready!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rupsa Roy. Designed with passion.</p>
+  </footer>
+
+</body>
+</html>
